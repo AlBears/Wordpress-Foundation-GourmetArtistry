@@ -42,6 +42,10 @@ function gourmet_artistry_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size('slider', 1200, 475, true );
+	add_image_size('entry', 619, 462, true );
+	add_image_size('single-image', 800, 300, true );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'gourmet-artistry' ),
