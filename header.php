@@ -27,7 +27,7 @@
 
 		<?php if ( get_header_image() ) : ?>
 				<div class="header-image" style="background-image:url(<?php header_image(); ?>)">
-		<?php endif; // End header image check. ?>
+
 
 
 				<div class="site-branding text-center">
@@ -47,10 +47,14 @@
 				</div><!-- .site-branding -->
 
 
+
 		</div><!-- </div> header image -->
+	<?php endif; // End header image check. ?>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gourmet-artistry' ); ?></button>
+			<span data-responsive-toggle="primary-menu" data-hide-for="medium">
+				<button class="menu-icon dark" type="button" data-toggle></button>
+			</span>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

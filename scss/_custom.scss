@@ -35,3 +35,46 @@ header {
     }
   }
 }
+
+/** Menu Container**/
+.main-navigation {
+  background-color: $primary-color;
+
+  > span {
+    padding: rem-calc(10px);
+    text-align: right;
+    display: block;
+    @include breakpoint(medium) {
+    display: none;
+  }
+  button.menu-icon {
+      @include hamburger($white, $white, 50px, 30px, 6px, 3);
+    }
+}
+
+.menu-main-navigation-container {
+  float:none!important;
+  @include grid-column-row();
+  .menu {
+    display: none;
+    @include menu-direction(vertical);
+    @include breakpoint(medium) {
+      display: table!important;
+      @include menu-expand;
+      @include menu-direction(horizontal);
+    }
+    li {
+      transition: all .3s ease-in-out;
+      &:hover {
+        background-color: darken($primary-color, 10);
+      }
+      a {
+        color: $white;
+        text-align: center;
+        font-weight: bold;
+        padding: rem-calc(20 0);
+      }
+    }
+  }
+}
+}
