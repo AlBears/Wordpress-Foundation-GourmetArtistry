@@ -39,7 +39,7 @@ header {
 /** Menu Container**/
 .main-navigation {
   background-color: $primary-color;
-
+  margin-bottom: rem-calc(20);
   > span {
     padding: rem-calc(10px);
     text-align: right;
@@ -50,6 +50,7 @@ header {
   button.menu-icon {
       @include hamburger($white, $white, 50px, 30px, 6px, 3);
     }
+
 }
 
 .menu-main-navigation-container {
@@ -80,4 +81,9 @@ header {
     }
   }
 }
+}
+
+/** Slider **/
+.orbit {
+  margin-bottom: rem-calc(60);
 }
