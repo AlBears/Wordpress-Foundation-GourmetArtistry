@@ -1,5 +1,5 @@
 <div class="row">
-		<div class="orbit" data-orbit>
+		<div class="orbit" id="orbit-slider" data-orbit>
 		  <ul class="orbit-container">
 		    <?php $args = array(
 		      'posts_per_page' => 4,
