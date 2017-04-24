@@ -15,6 +15,13 @@ if ( ! function_exists( 'gourmet_artistry_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+
+
+function gourmet_artistry_excerpt( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'gourmet_artistry_excerpt', 999 );
+
 function gourmet_artistry_setup() {
 	/*
 	 * Make theme available for translation.
