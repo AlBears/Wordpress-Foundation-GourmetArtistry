@@ -127,3 +127,15 @@ header {
     text-transform: uppercase;
   }
 }
+
+/** Widgets **/
+section.widget_latests_recipes {
+  ul {
+    li {
+      margin-bottom: rem-calc(20);
+      a {
+        color:$primary-color;
+      }
+    }
+  }
+}
