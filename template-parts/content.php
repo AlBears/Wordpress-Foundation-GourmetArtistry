@@ -13,7 +13,7 @@
 	<div class="row">
 			<?php if(is_single() ) { ?>
 				<div class="large-12 columns">
-					<?php the_post_thumbnail('slider'); ?>
+					<?php the_post_thumbnail('single-image', array('class' => 'thumbnail')); ?>
 				</div>
 			<?php  } else {?>
 

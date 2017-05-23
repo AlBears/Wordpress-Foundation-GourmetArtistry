@@ -194,3 +194,11 @@ ul#social-menu {
 			}
 		}
 }
+
+/** Single **/
+
+.single .type-post {
+  @include breakpoint(large) {
+    margin-top: rem-calc(56);
+  }
+}
