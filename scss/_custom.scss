@@ -202,3 +202,10 @@ ul#social-menu {
     margin-top: rem-calc(56);
   }
 }
+
+/** Contact Form **/
+.button.success,
+.button.success:hover {
+  padding:rem-calc(10 60)!important;
+  background-color: $primary-color;
+}
