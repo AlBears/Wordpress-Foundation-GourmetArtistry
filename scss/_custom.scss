@@ -30,7 +30,8 @@ h2.latest-entries {
 
 
 header {
-  .header-image {
+  .header-image,
+  .no-image {
     height: rem-calc(376);
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,6 +57,10 @@ header {
       }
     }
   }
+}
+
+.no-image {
+  background-color: darken($primary-color,5);
 }
 
 /** Menu Container**/
